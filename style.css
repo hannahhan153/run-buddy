@@ -72,12 +72,13 @@ section {
 
 /* Hero Style Start */
 .hero {
-  background-image: url("../images/hero-bg.jpeg");
+  background-image: url("../images/hero-bg.jpg");
   height: 600px;
   background-size: cover;
   background-position: center;
   position: relative;
 }
+/* Hero Style End */
 
 .hero-form {
   border: solid 3px #024e75;
@@ -120,5 +121,5 @@ section {
   padding: 10px 20px;
   font-size: 16px;
 }
-/* Hero Style End */
+
 
