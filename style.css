@@ -10,7 +10,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* apply styles to <header> */
+/* Header/Navbar Styles Start */
 header {
   display: flex;
   justify-content: space-between;
@@ -25,6 +25,7 @@ header h1 {
   color: #fce138;
   margin: 0;
 }
+
 header a {
   text-decoration: none;  
   color: #fce138;
@@ -47,7 +48,9 @@ header nav ul li a {
   font-weight: lighter;
   font-size: 1.55vw;
 }
+/* Header/Navbar Styles End */
 
+/* Footer Styles Start */
 footer {
   display: flex;
   justify-content: space-between;
@@ -71,7 +74,9 @@ footer div {
 footer a {
   color: #024e76;
 }
+/* End Footer Styles */
 
+/* Style All Section Tags */
 section {
   padding: 60px;
 }
@@ -85,7 +90,6 @@ section {
   justify-content: center;
   flex-wrap: wrap;
 }
-/* Hero Style End */
 
 .hero-form {
   border: solid 3px #024e75;
@@ -94,6 +98,15 @@ section {
   color: #024e76;
   width: 40%;
   margin: 3.5%;
+}
+
+.hero-form h3 {
+  font-size: 24px;
+  margin:0;
+}
+
+.hero-form p {
+  margin: 5px 0 15px 0;
 }
 
 .hero-cta {
@@ -109,15 +122,6 @@ section {
   font-style: italic;
   font-size: 55px;
   color: #fce138;
-}
-
-.hero-form h3 {
-  font-size: 24px;
-  margin:0;
-}
-
-.hero-form p {
-  margin: 5px 0 15px 0;
 }
 
 .form-input {
@@ -141,17 +145,29 @@ section {
   padding: 10px 20px;
   font-size: 16px;
 }
+/* Hero Style End */
 
-.intro h2 {
+/* Section Title Styles Start */
+.section-title {
   font-size: 55px;
   color:#024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
   border-bottom: 3px solid;
-  border-color: #fce138;
-  display: inline-block;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
 }
 
+.primary-border {
+  border-color: #fce138;
+}
+
+.secondary-border {
+  border-color: #39a6b2
+}
+/* Section Title Styles End */
+
+/* What We Do Styles */
 .intro p {
   margin: 0 auto;
   line-height: 1.7;
@@ -159,6 +175,12 @@ section {
   width: 80%;
   font-size: 20px;
   text-align: center;
+}
+/* What We Do Styles End */
+
+/* What You Do Styles Start */
+.steps {
+  background: #fce138;
 }
 
 .step {
@@ -170,7 +192,6 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background: #fce138;
 }
 
 .step h3 {
@@ -209,23 +230,9 @@ section {
   color: #024e76;
 }
 
-.section-title {
-  font-size: 55px;
-  color:#024e76;
-  border-bottom: 3px solid;
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
-}
+/* What You Do Styles End */
 
-.primary-border {
-  border-color: #fce138;
-}
-
-.secondary-border {
-  border-color: #39a6b2
-}
+/* Trainer Styles Start */
 
 .trainers {
   width: 100%;
@@ -236,7 +243,7 @@ section {
 }
 
 .trainer {
-  margin: 0 auto 20px auto;
+  margin: 20px;
   background: #024e76;
   color: #fce138;
   flex: 1;
@@ -264,35 +271,33 @@ section {
 .trainer-bio p {
   font-size: 17px;
 }
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
+/* Trainer Styles End */
 
 /* REACH OUT STYLES START */
 .contact {
-  background-color: #024e76;
+  background: #024e76;
 }
 
 .contact h2{
   color: #fce138;
 }
 
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
 .contact-info iframe {
-  width: 400px;
   height: 400px;
 }
 
 .contact-info div {
-  width: 410px;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  margin: 30px 0 0 60px;
   color: white;
 }
 
@@ -301,19 +306,47 @@ section {
   font-size: 32px;
 }
 
-.contact-info p, 
-.contact-info address {
+.contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
 }
 
+.contact-form input, .contact-form textarea {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+  border: none;
+  background: #fce138;
+  color:#024e76;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+}
 .contact-info a {
   color: #fce138;
+}
+/* REACH OUT STYLES END */
+
+/* Utilities */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .flex-row {
   display: flex;
 }
-/* REACH OUT STYLES END */
