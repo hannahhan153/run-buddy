@@ -5,9 +5,9 @@
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -135,7 +135,7 @@ section {
 
 .hero-form {
   border: solid 3px var(--secondary-color);
-  background-color: rgb(252,225,56, 0.8);
+  background-color: rgba(252, 225, 56, 0.8);
   padding: 20px;
   color: var(--secondary-color);
   width: 40%;
@@ -545,6 +545,10 @@ section {
   .step-text {
     flex: 100%;
   } 
+
+  .trainer-bio h3, .trainer-bio h4 {
+    display: block;
+  }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
